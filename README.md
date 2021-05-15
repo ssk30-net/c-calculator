@@ -8,8 +8,8 @@ A nifty calculator program in C and Python ✨
 2. Clone the repo locally to your PC.
 
 ```sh
-git clone https://github.com/YOUR_USERNAME/calculator
-cd calculator
+git clone https://github.com/manavpatnaik/calculator
+cd c-calculator
 ```
 
 3. Make necessary changes to either `calculator.c` or `calculator.py`.
@@ -29,7 +29,7 @@ git commit -m "Updated calculator"
 6. Push to your repository.
 
 ```sh
-git push origin main
+git push -u origin main
 ```
 
 7. Open a Pull Request to this repository.
@@ -37,8 +37,6 @@ git push origin main
 ### License
 
 MIT License.
-
-Original at [manavpatnaik/c-calculator](https://github.com/manavpatnaik/c-calculator).
 
 ### Built by
 
