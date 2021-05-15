@@ -36,6 +36,9 @@ void calcSine() {
 // 10. Ceiling
 // 11. Round
 // 12. Absolute value
+int abs_value_manav(int num) {
+    return num < 0 ? num*(-1) : num;
+}
 
 int main() {
     int choice;
@@ -79,6 +82,8 @@ int main() {
         case 10:
         case 11:
         case 12:
+            printf("%d\n", abs_value_manav(-112));
+            break;
         default:
             printf("Invalid choice!");
     }
