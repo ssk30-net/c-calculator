@@ -1,7 +1,7 @@
 #include <math.h>
 #include <stdio.h>
 
-// 1. Addition
+
 void calcAddition() {
     printf("\nEnter two numbers: \n");
     int a, b;
@@ -10,12 +10,36 @@ void calcAddition() {
     printf("The sum is %d\n", result);
 }
 
-// Fill the rest of the functionality here!
-// 2. Subtraction
-// 3. Multiplication
-// 4. Division
-// 5. Exponentiation
 
+void calcSubtraction() {
+    printf("\nEnter two numbers: \n");
+    int a, b;
+    scanf("%d%d", &a, &b);
+    int result = a - b;
+    printf("The sum is %d\n", result);
+}
+
+void calcProduct() {
+    printf("\nEnter two numbers: \n");
+    int a, b;
+    scanf("%d%d", &a, &b);
+    int result = a * b;
+    printf("The Product is %d\n", result);
+}
+void calcDivision() {
+    printf("\nEnter two numbers: \n");
+    int a, b;
+    scanf("%d%d", &a, &b);
+    int result = a/b;
+    printf("The Division is %d\n", result);
+}
+void calcExponentiation() {
+    printf("\nEnter two numbers: \n");
+    int a, b;
+    scanf("%d%d", &a, &b);
+    int result = pow(a,b);
+    printf("The sum is %d\n", result);
+}
 // 6. Sine
 void calcSine() {
     printf("\nEnter the angle in degrees: ");
@@ -42,7 +66,17 @@ void calcSine() {
 
     printf("The cosine value is %f", answer);
 }
+// 7. Cosine(sai mrudhun)
+void calccosine() {
+    int angle;
+    scanf("%d",&angle);
 
+    // converting degrees into radians
+    double radians=angle / 180.0 * 3.14;
+    double answer=cos(radians);
+
+    printf("the cosine value is %f", answer);
+}
 // 8. Tangent
 // 9. Floor
 // 10. Ceiling
@@ -76,9 +110,17 @@ int main() {
             break;
 
         case 2:
+        	calcSubtraction();
+            break;
         case 3:
+        	calcProduct();
+            break;
         case 4:
+        	calcDivision();
+            break;
         case 5:
+        	calcExponentiation();
+            break;
 
         // 6. Sine
         case 6:
@@ -98,3 +140,5 @@ int main() {
     }
     return 0;
 }
+
+//Avanish ...
