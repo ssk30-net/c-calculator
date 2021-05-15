@@ -30,15 +30,24 @@ void calcSine() {
 }
 
 // Fill the rest of the functionality here!
-// 7. Cosine
+// 7. Cosine - Sashank
+void calcSine() {
+    printf("\nEnter the angle in degrees: ");
+    int angle;
+    scanf("%d", &angle);
+
+    // Convert degrees to radians
+    double radians = angle / 180.0 * 3.14;
+    double answer = cosin(radians);
+
+    printf("The cosine value is %f", answer);
+}
+
 // 8. Tangent
 // 9. Floor
 // 10. Ceiling
 // 11. Round
 // 12. Absolute value
-int abs_value_manav(int num) {
-    return num < 0 ? num*(-1) : num;
-}
 
 int main() {
     int choice;
@@ -77,13 +86,13 @@ int main() {
             break;
 
         case 7:
+            calcCosine();
+            break;
         case 8:
         case 9:
         case 10:
         case 11:
         case 12:
-            printf("%d\n", abs_value_manav(-112));
-            break;
         default:
             printf("Invalid choice!");
     }
