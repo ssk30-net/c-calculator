@@ -40,4 +40,4 @@ MIT License.
 
 ### Built by
 
-- Radiantly
+- Radiantly ([Profile](https://github.com/radiantly))
